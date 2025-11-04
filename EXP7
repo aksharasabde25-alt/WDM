@@ -1,0 +1,14 @@
+const EventEmitter = require('events');
+
+const myEmitter = new EventEmitter();
+
+myEmitter.on('greet', (name) => {
+  console.log(`Hello, ${name}! Welcome to NodeJS Events Demo.`);
+});
+
+myEmitter.on('bye', (name) => {
+  console.log(`Goodbye, ${name}! See you soon.`);
+});
+
+myEmitter.emit('greet', 'Anu');
+myEmitter.emit('bye', 'Anu');
