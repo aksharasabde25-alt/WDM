@@ -1,0 +1,26 @@
+EXP 4: WAP that demonstrates how to use jQuery to handle a button click event and 
+manipulate the DOM 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>jQuery Button Click Example</title> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<style> 
+body{text-align:center;font-family:Arial;margin-top:50px;background:#e6f2ff;} 
+button{padding:10px 20px;background:#3399ff;color:#fff;border:none;border
+radius:5px;cursor:pointer;} 
+</style> 
+</head> 
+<body> 
+<h2 id="msg">Hello, welcome!</h2> 
+<button id="btn">Click Me</button> 
+<script> 
+$(document).ready(function(){ 
+$("#btn").click(function(){ 
+$("#msg").text("You clicked the button!").css("color","blue"); 
+$("body").css("background","#d0e7ff"); 
+}); 
+}); 
+</script> 
+</body> 
+</html> 
