@@ -1,0 +1,18 @@
+EXP 1: Create a static webpage using HTML tags and CSS 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Here is My Webpage</title> 
+<style> 
+body{font-family:Arial;text-align:center;background:#d0e7ff;margin:0} 
+header,footer{background:#3399ff;color:#fff;padding:10px} 
+section{background:#e6f2ff;margin:20px;padding:15px;border-radius:8px} 
+</style> 
+</head> 
+<body> 
+<header><h1>Welcome to my portfolio!</h1></header> 
+<section><h2>About</h2><p>This is a simple static webpage displaying my 
+details.</p></section> 
+<footer><p>&copy; 2025 My Webpage</p></footer> 
+</body> 
+</html> 
