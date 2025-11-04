@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback and Promise Demo</title>
+</head>
+<body>
+    <h2>Callback and Promise Example (JSON)</h2>
+    <div id="output"></div>
+    <script>
+        // Sample JSON data
+        const jsonData = [
+            { id: 1, name: "Alice" },
+            { id: 2, name: "Bob" }
+        ];
+
+        // Callback function example
+        function fetchDataWithCallback(callback) {
+            setTimeout(() => {
+                callback(jsonData);
+            }, 1000);
+        }
+
+        // Promise example
+        function fetchDataWithPromise() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(jsonData);
+                }, 1000);
+            });
+        }
+
+        // Using callback
+        fetchDataWithCallback(function(data) {
+            document.getElementById('output').innerHTML +=
+                "<strong>Callback Result:</strong> " + JSON.stringify(data) + "<br>";
+        });
+
+        // Using promise
+        fetchDataWithPromise()
+            .then(data => {
+                document.getElementById('output').innerHTML +=
+                    "<strong>Promise Result:</strong> " + JSON.stringify(data);
+            });
+    </script>
+</body>
+</html>
