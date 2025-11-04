@@ -1,0 +1,42 @@
+EXP 5: Design and Implement a routing application in ReactJS Using IDE VS Code   
+  <BrowserRouter> 
+      <div style={containerStyle}> 
+        <h1>React Routing Application</h1> 
+        <nav style={{ marginBottom: '20px' }}> 
+          <Link to="/" style={navStyle}>Home</Link> 
+          <Link to="/about" style={navStyle}>About</Link> 
+          <Link to="/contact" style={navStyle}>Contact</Link> 
+        </nav> 
+ 
+        <Routes> 
+          <Route  
+            path="/"  
+            element={ 
+              <div> 
+                <h2>Home Page</h2> 
+                <p>Welcome to the React Routing Application!</p> 
+              </div> 
+            
+          <Route  
+            path="/about"  
+            element={ 
+              <div> 
+                <h2>About Page</h2> 
+                <p>This is a simple routing application built using React.</p> 
+              </div> 
+            
+          <Route  
+            path="/contact"  
+            element={ 
+              <div> 
+                <h2>Contact Page</h2> 
+                <p>Contact us at: netweb@gmail.com</p> 
+              </div> 
+            
+        </Routes> 
+      </div> 
+    </BrowserRouter> 
+   
+ 
+ 
+ 
