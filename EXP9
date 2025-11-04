@@ -1,0 +1,22 @@
+EXP 9: WAP using Flask to render HTML templates   
+  <html> 
+    <head><title>Home - Flask App</title></head> 
+    <body style="text-align:center; font-family:Arial;"> 
+        <h1>Welcome to Flask!</h1> 
+        <p>This is the Home Page rendered using Flask.</p> 
+        <a href="/about">Go to About Page</a> 
+    </body> 
+    </html> 
+    ''') 
+ <html> 
+    <head><title>About - Flask App</title></head> 
+    <body style="text-align:center; font-family:Arial;"> 
+        <h1>About Page</h1> 
+        <p>This demonstrates Flask rendering HTML templates.</p> 
+        <a href="/">Back to Home</a> 
+    </body> 
+    </html> 
+    ''') 
+ 
+ 
+   
